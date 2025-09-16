@@ -22,16 +22,15 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Flutter Demo',
       theme: AppTheme.dark,
-      // DEMO: Show League Standing directly
+      // DEMO: Show League Standing directly with demo arguments
       // TODO(REMOVE): Set your real start page once API is connected
-      // home: LeagueStandingScreen(
-      //   league: LeagueModel(
-      //     id: '1',
-      //     name: 'Premier League',
-      //     imageUrl:
-      //         'https://images.unsplash.com/photo-1521417531039-75e91486cc79?q=80&w=1200&auto=format&fit=crop',
-      //   ),
-      home: LeagueListScreen(),
+      home: LeagueStandingScreen(
+        league: LeagueModel(
+          id: 'demo-1',
+          name: 'Premier League',
+          imageUrl: 'https://via.placeholder.com/300x200?text=Premier+League',
+        ),
+      ),
       getPages: [
         GetPage(name: '/join-league', page: () => JoinLeagueScreen()),
         GetPage(name: '/leagues', page: () => LeagueListScreen()),

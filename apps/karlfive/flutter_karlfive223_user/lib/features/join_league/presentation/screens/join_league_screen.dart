@@ -155,7 +155,7 @@ class _LabeledField extends StatelessWidget {
 
 class _UploadBox extends StatelessWidget {
   final JoinLeagueController? controller;
-  _UploadBox({this.controller});
+  const _UploadBox({this.controller});
   @override
   Widget build(BuildContext context) {
     final ctrl = controller ?? Get.find<JoinLeagueController>();
@@ -217,7 +217,7 @@ class _LeagueDropdown extends StatelessWidget {
     final leagues = <String>['Premier', 'Challenger', 'Amateur'];
     return Obx(
       () => DropdownButtonFormField<String>(
-        value: controller.selectedLeague.value.isEmpty
+        initialValue: controller.selectedLeague.value.isEmpty
             ? null
             : controller.selectedLeague.value,
         items: leagues
@@ -284,7 +284,7 @@ class _PlayerLevelDropdown extends StatelessWidget {
   Widget build(BuildContext context) {
     return Obx(
       () => DropdownButtonFormField<int>(
-        value: controller.selectedPlayerLevelId.value,
+        initialValue: controller.selectedPlayerLevelId.value,
         items: controller.playerLevels.map((level) {
           final int id = level['id'] as int;
           final String label = level['label'] as String;

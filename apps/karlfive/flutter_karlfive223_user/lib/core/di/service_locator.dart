@@ -1,4 +1,3 @@
-import 'package:get/get.dart';
 
 import 'set_controllers.dart';
 import 'setup_usecases.dart';

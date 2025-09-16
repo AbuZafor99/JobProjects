@@ -9,7 +9,6 @@ import '../../../../core/common/widgets/app_scaffold.dart';
 import '../../../../core/common/widgets/form_error_message.dart';
 import '../../../../core/common/widgets/or_divider_with_circle.dart';
 import '../../../../core/theme/app_colors.dart';
-import '../../../../core/utils/debug_print.dart' hide DPrint;
 import '../controller/auth_controller.dart';
 
 class LoginScreen extends StatefulWidget {

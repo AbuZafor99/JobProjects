@@ -3,9 +3,7 @@ import 'package:karlfive/features/auth/presentation/controller/auth_controller.d
 import 'package:karlfive/features/join_league/presentation/controller/join_league_controller.dart';
 import 'package:karlfive/features/leagues/presentation/controller/league_controller.dart';
 import 'package:karlfive/features/leagues/data/league_repository.dart';
-
-import '../../features/league_standing/data/standing_repository.dart';
-
+import 'package:karlfive/features/league_standing/data/standing_repository.dart';
 
 void setupController() {
   // Auth Controller

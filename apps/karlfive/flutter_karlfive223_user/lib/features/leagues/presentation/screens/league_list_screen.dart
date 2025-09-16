@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../../core/common/widgets/app_scaffold.dart';
+import '../../../../core/common/widgets/app_bottom_nav_bar.dart';
 import '../../../../core/theme/app_colors.dart';
 import '../../data/models/league_model.dart';
 import '../controller/league_controller.dart';
@@ -14,6 +15,13 @@ class LeagueListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppScaffold(
+      bottomNavigationBar: AppBottomNavBar(
+        currentIndex: 0,
+        onTap: (index) {
+          // Just handle the color change in the bottom nav bar
+          // No navigation needed
+        },
+      ),
       body: SafeArea(
         child: Obx(() {
           if (controller.isLoading.value) {
