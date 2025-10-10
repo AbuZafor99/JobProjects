@@ -54,7 +54,7 @@ class AboutUsScreen extends StatelessWidget {
 
             SizedBox(height: 32,),
 
-            Container(
+            SizedBox(
               height: 58,
               child: Row(
                 children: [

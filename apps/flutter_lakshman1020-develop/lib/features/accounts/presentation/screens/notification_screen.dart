@@ -10,7 +10,7 @@ import '../../../../core/constants/appTexts.dart';
 
 
 class NotificationSettingsScreen extends StatelessWidget {
-  NotificationSettingsScreen({Key? key}) : super(key: key);
+  NotificationSettingsScreen({super.key});
 
   // 🔹 Use RxList for reactive updates
   final RxList<NotificationSettingModel> titles = <NotificationSettingModel>[

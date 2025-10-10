@@ -251,7 +251,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           phoneCallEnabled = val;
         });
       },
-      activeColor: TColors.enableButton,
+      activeThumbColor: TColors.enableButton,
     );
   }
 

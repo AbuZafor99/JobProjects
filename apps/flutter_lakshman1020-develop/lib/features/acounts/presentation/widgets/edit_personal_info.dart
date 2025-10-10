@@ -10,13 +10,13 @@ class EditPersonalInfo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final TextEditingController _nameTEController = TextEditingController();
-    final TextEditingController __emailTEController = TextEditingController();
-    final TextEditingController _dateOfBirthTEController =
+    final TextEditingController nameTEController = TextEditingController();
+    final TextEditingController _emailTEController = TextEditingController();
+    final TextEditingController dateOfBirthTEController =
         TextEditingController();
-    final TextEditingController _mobileTEController = TextEditingController();
-    final TextEditingController _addressTEController = TextEditingController();
-    final TextEditingController _nationalityTEController =
+    final TextEditingController mobileTEController = TextEditingController();
+    final TextEditingController addressTEController = TextEditingController();
+    final TextEditingController nationalityTEController =
         TextEditingController();
 
     return SingleChildScrollView(
@@ -33,7 +33,7 @@ class EditPersonalInfo extends StatelessWidget {
             ),
           ),
           SizedBox(height: 8),
-          CustomTextField(label: 'Name', controller: _nameTEController),
+          CustomTextField(label: 'Name', controller: nameTEController),
           SizedBox(height: 16),
 
           // Email
@@ -46,7 +46,7 @@ class EditPersonalInfo extends StatelessWidget {
             ),
           ),
           SizedBox(height: 8),
-          CustomTextField(label: 'Email', controller: __emailTEController),
+          CustomTextField(label: 'Email', controller: _emailTEController),
           SizedBox(height: 16),
 
           // Mobile & Date of Birth
@@ -70,7 +70,7 @@ class EditPersonalInfo extends StatelessWidget {
 
                     CustomTextField(
                       label: 'Mobile',
-                      controller: __emailTEController,
+                      controller: _emailTEController,
                       prefixIcon: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
@@ -109,7 +109,7 @@ class EditPersonalInfo extends StatelessWidget {
                     SizedBox(height: 8),
                     CustomTextField(
                       label: 'Date of birth',
-                      controller: __emailTEController,
+                      controller: _emailTEController,
                       prefixIcon: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
@@ -156,7 +156,7 @@ class EditPersonalInfo extends StatelessWidget {
 
                     CustomTextField(
                       label: 'Address',
-                      controller: __emailTEController,
+                      controller: _emailTEController,
                       prefixIcon: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
@@ -195,7 +195,7 @@ class EditPersonalInfo extends StatelessWidget {
                     SizedBox(height: 8),
                     CustomTextField(
                       label: 'Nationality',
-                      controller: __emailTEController,
+                      controller: _emailTEController,
                     ),
                   ],
                 ),

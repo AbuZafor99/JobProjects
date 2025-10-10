@@ -119,7 +119,7 @@ class SettingsScreen extends StatelessWidget {
           onChanged: (value) {
             phoneCallEnabled.value = value;
           },
-          activeColor: TColors.enableButton.withOpacity(1),
+          activeThumbColor: TColors.enableButton.withOpacity(1),
           activeTrackColor: TColors.personalBackground,
           inactiveThumbColor: TColors.enableButton,
         ),

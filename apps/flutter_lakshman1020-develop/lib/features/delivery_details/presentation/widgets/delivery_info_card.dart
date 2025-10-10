@@ -40,7 +40,7 @@ class DeliveryInfoCard extends StatelessWidget {
                   _buildDivider(),
               ],
             );
-          }).toList(),
+          }),
         ],
       ),
     );

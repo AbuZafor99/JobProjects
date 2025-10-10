@@ -172,7 +172,7 @@ class RequestInformationScreen extends StatelessWidget {
         Text(label, style: TTextStyles.label),
         const SizedBox(height: 6),
         DropdownButtonFormField<String>(
-          value: items.first,
+          initialValue: items.first,
           items: items
               .map((e) => DropdownMenuItem(value: e, child: Text(e)))
               .toList(),

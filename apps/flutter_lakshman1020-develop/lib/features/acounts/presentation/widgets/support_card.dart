@@ -10,7 +10,7 @@ class SupportCard extends StatelessWidget {
   final SupportItem item;
 
 
-  const SupportCard({required this.item});
+  const SupportCard({super.key, required this.item});
 
   @override
   Widget build(BuildContext context) {

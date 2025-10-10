@@ -46,7 +46,7 @@ class FAQItem extends StatelessWidget {
         const SizedBox(height: 12),
 
         // Bullet points
-        ...bulletPoints.map((point) => _buildBulletPoint(point)).toList(),
+        ...bulletPoints.map((point) => _buildBulletPoint(point)),
       ],
     );
   }

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_lakshman1020/core/constants/app_colors.dart';
 
 class RecentSection extends StatelessWidget {
-  const RecentSection();
+  const RecentSection({super.key});
 
   @override
   Widget build(BuildContext context) {

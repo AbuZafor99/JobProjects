@@ -61,11 +61,11 @@ class NotificationWidget extends StatelessWidget {
                 child: Switch(
                   value: value,
                   onChanged: onChanged, // just forward callback
-                  activeColor: TColors.primary, // knob color
+                  activeThumbColor: TColors.primary, // knob color
                   activeTrackColor: TColors.personalBackground, // background when ON
                   inactiveThumbColor: TColors.white,
                   inactiveTrackColor: TColors.personalBackground,
-                  trackOutlineColor: MaterialStateProperty.all(Colors.transparent),
+                  trackOutlineColor: WidgetStateProperty.all(Colors.transparent),
                   // knob color when OFF
                 ),
               ),

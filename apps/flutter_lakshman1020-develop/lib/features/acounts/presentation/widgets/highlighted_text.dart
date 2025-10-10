@@ -23,7 +23,7 @@ class HighlightedTextBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: height,
       child: Row(
         children: [

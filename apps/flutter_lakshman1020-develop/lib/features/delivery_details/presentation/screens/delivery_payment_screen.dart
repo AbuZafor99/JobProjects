@@ -24,7 +24,6 @@ class DeliveryDetailsPaymentScreen extends StatelessWidget {
         }
         final selectedDelivery =
         controller.deliveryList[controller.selectedIndex.value];
-        if (selectedDelivery == null) {}
         // Explicitly cast to Map<String, String> to match the expected type
         final deliveryDetails = Map<String, String>.from(selectedDelivery)
           ..remove('productDescription');

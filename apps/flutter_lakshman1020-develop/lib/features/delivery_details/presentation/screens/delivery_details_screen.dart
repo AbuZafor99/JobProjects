@@ -22,9 +22,6 @@ class DeliveryDetailsScreen extends StatelessWidget {
           return const Center(child: CircularProgressIndicator());
         }
         final selectedDelivery = controller.deliveryList[controller.selectedIndex.value];
-        if (selectedDelivery == null) {
-          return const Center(child: Text('No delivery data available'));
-        }
         // Explicitly cast to Map<String, String> to match the expected type
         final deliveryDetails = Map<String, String>.from(selectedDelivery)
           ..remove('productDescription');

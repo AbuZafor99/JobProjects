@@ -7,7 +7,7 @@ class LoadStop extends StatelessWidget {
   final Color statusColor;
   final String time;
 
-  const LoadStop({
+  const LoadStop({super.key, 
     required this.label,
     required this.location,
     required this.status,

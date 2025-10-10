@@ -145,7 +145,7 @@ class AccountsScreen extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(borderRadius: BorderRadius.circular(4)),
       child: ListTile(
-        leading: Container(height: 20, width: 20, child: Image.asset(image)),
+        leading: SizedBox(height: 20, width: 20, child: Image.asset(image)),
         title: Text(
           title,
           style: TextStyle(
