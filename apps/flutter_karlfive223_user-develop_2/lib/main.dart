@@ -1,4 +1,4 @@
-oimport 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
 import 'package:get/get.dart';
 import 'package:karlfive/core/init/app_initializer.dart';

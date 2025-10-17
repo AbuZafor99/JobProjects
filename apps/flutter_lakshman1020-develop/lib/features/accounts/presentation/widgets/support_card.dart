@@ -17,7 +17,7 @@ class SupportCard extends StatelessWidget {
     return GestureDetector(
       onTap: (){
         if (item.title == "How do I reset my password") {
-          Get.to(ResetPasswordInfoScreen());
+          // Get.to(ResetPasswordInfoScreen());
         } else if (item.title == "Safety & Policy") {
 
         } else if (item.title == "Delivery & Job Support") {
